@@ -25,8 +25,8 @@ public class AWSS3Service {
 	private final AmazonS3 s3client;
 
 	public AWSS3Service() {
-		AWSCredentials credentials = new BasicAWSCredentials("",
-				"");
+		AWSCredentials credentials = new BasicAWSCredentials("<inserir>",
+				"<inserir>");
 		this.s3client = AmazonS3ClientBuilder.standard()
 				.withCredentials(new AWSStaticCredentialsProvider(credentials)).withRegion(Regions.US_EAST_2).build();
 	}
